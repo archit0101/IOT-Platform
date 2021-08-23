@@ -1,0 +1,134 @@
+{
+    "busClass": "Eicher_Bus_7_Seater",
+    "description": "sensor for controlling Bus",
+    "dataRate": 30,
+    "fields": [
+        {
+            "GPS": [
+                {
+                    "class": "GPS567Sd"
+                },
+                {
+                    "name": "X-cor",
+                    "min": 0,
+                    "max": 50
+                },
+                {
+                    "name": "Y-cor",
+                    "min": 0,
+                    "max": 50
+                }
+            ]
+        },
+        {
+            "biometric": {
+                "class": "BIO83gf",
+                "value_type": "stream"
+            }
+        },
+        {
+            "currentTemp": {
+                "class": "TEMP783",
+                "value_type": "int",
+                "min": 0,
+                "max": 50
+            }
+        },
+        {
+            "tempState": {
+                "class": "TEMP783",
+                "value_type": "bool",
+                "min": "off",
+                "max": "on"
+            }
+        },
+        {
+            "currentLux": {
+                "class": "LIGHT67cf",
+                "value_type": "int",
+                "min": 0,
+                "max": 50
+            }
+        },
+        {
+            "lightState": {
+                "class": "LIGHT67cf",
+                "value_type": "bool",
+                "min": "off",
+                "max": "on"
+            }
+        },
+        {
+            "buzzerState": {
+                "class": "BUZZ700nn",
+                "value_type": "bool",
+                "min": "off",
+                "max": "on"
+            }
+        }
+    ],
+    "functions": [
+        {
+            "getGPS()": {
+                "input": "-",
+                "output": "(X_cor,Y_cor)"
+            }
+        },
+        {
+            "getTempState()": {
+                "input": "-",
+                "output": "True-false"
+            }
+        },
+        {
+            "getCurrentTemp()": {
+                "input": "-",
+                "output": "int"
+            }
+        },
+        {
+            "getLightState()": {
+                "input": "-",
+                "output": "True-false"
+            }
+        },
+        {
+            "getCurrentLux()": {
+                "input": "-",
+                "output": "int"
+            }
+        },
+        {
+            "getBuzzerState()": {
+                "input": "-",
+                "output": "True-false"
+            }
+        },
+        {
+            "getBiometricData()": {
+                "input": "-",
+                "output": "Stream"
+            }
+        }
+    ],
+    "controller": [
+        {
+            "switchACState()": {
+                "input": "True-false",
+                "output": "True-false"
+            }
+        },
+        {
+            "switchLightState()": {
+                "input": "True-false",
+                "output": "True-false"
+            }
+        },
+        {
+            "switchBuzzerState()": {
+                "input": "True-false",
+                "output": "True-false"
+            }
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+<html>
+
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Welcome To IOT Platform</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="style.css"/>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+      
+   </head>
+
+   <body>
+    <form action = "http://localhost:5000/user" method = "post" enctype="multipart/form-data">
+         <div class=w3-center id="a1"><h1>Welcome to IOT Platform</h1></div>
+         <br> <br>
+         {% with messages = get_flashed_messages() %}
+         {% if messages %}
+            <ul>
+               <li id="a2">{{ messages }}</li>
+            </ul>
+         {% endif %}
+         {% endwith %}
+        <div>
+            <h3 id="a2" class="w3-center">User Dashboard</h3>
+        </div>
+        <br> <br>
+         
+        <div>
+            <table id="a4" class="center">
+                <tr id="a3">
+                    <td>
+                        Choose The Bus -->
+                    </td>
+                    <td>
+                        <input type="text" id="appname" name="appname">
+                    </td>
+                </tr>
+
+                <tr id="a3">
+                    <td>
+                        Upload schedule information file-->
+                    </td>
+                    <td>
+                        <input type="file" id="myfile2" name="myfile2" onchange="return fileValidation2()">
+                    </td>
+                </tr>
+
+            </table> 
+            <table>
+              <tr>
+
+                     <p class="w3-mobile w3-center">
+                <input type="submit" name="Start" value="Start"
+                    class="w3-button w3-light-yellow w3-padding-large"
+                    style="background-color: #eec65f;  position: absolute; color: black;">
+              
+              </p>
+         
+                </tr>
+         
+            </table>
+         </div>
+         <br>
+         <br>
+         
+         <br>
+         <div id="a2">
+            <br><br><br><br><br>
+            <h4 style="left:80%; position: absolute; ">
+               Developed By:-
+               <br>
+               Group 3
+            </h4>
+            
+         </div>
+         
+      </form>
+   </body>
+</html>
+
+<script>
+
+   function fileValidation1()
+   {
+        var files=document.getElementById("myfile1")
+        var filename=files.value
+        //alert(filename)
+       
+        var allowedExtensions = /(\.json)$/i;        
+        if (!allowedExtensions.exec(filename)) {
+            alert('Invalid file type');
+            files.value = '';
+            return false;
+        } 
+   }
+
+   function fileValidation2()
+   {
+        var files=document.getElementById("myfile2")
+        var filename=files.value
+        //alert(filename)
+       
+        var allowedExtensions = /(\.json)$/i;        
+        if (!allowedExtensions.exec(filename)) {
+            alert('Invalid file type');
+            files.value = '';
+            return false;
+        } 
+   }
+
+
+   
+</script>

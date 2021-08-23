@@ -1,0 +1,65 @@
+<html>
+
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Welcome To IOT Platform</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="style.css" />
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+      
+   </head>
+
+   <body>
+      <form action = "http://localhost:5000/" method = "post" enctype="multipart/form-data">
+         <div class=w3-center id="a1"><h1>Welcome to IOT Platform</h1></div>
+         <div>
+            <br><br><br><br><br>
+            <h3 id="a2">Do you want to login or register...??</h3>
+            <!--<p>Enter Name:</p>
+            <p><input type = "text" name = "nm" /></p>
+            <p><input type = "submit" value = "submit" /></p>-->
+         </div>
+         <br><br><br><br><br>
+         <div>
+            <p class="w3-mobile">
+               <input type="submit" name="login_button" value="Login"
+                    class="w3-button w3-light-yellow w3-padding-large"
+                    style="background-color: #eec65f; left:30%; position: absolute; color: black;">
+                
+             </p>
+
+             <p class="w3-mobile">
+               <input type="submit" name="register_button" value="Register"
+                    class="w3-button w3-light-yellow w3-padding-large"
+                    style="background-color: #eec65f; left:60%; position: absolute; color: black;">
+                  
+             
+             </p>
+         </div>
+         <br><br><br><br><br>
+         <div id="a2">
+            <br><br><br><br><br>
+            <h4 style="left:80%; position: absolute; ">
+               Developed By:-
+               <br>
+               Group 3
+            </h4>
+            
+         </div>
+         
+      </form>
+   </body>
+</html>
+
+<script>
+   function clickfunc1()
+   {
+       document.location="http://localhost:5000/login";
+   }
+   function clickfunc2()
+   {
+       document.location="register.html";
+   }
+</script>

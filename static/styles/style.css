@@ -1,0 +1,36 @@
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+  }
+
+#a1{
+  background-color: #eec65f;
+}
+
+#a2{
+  color: white;
+}
+
+
+#a3{
+  border:1px solid white;
+  color: white;
+  border-spacing: 50px;
+}
+
+#a4{
+  border:1px solid white;
+  color: white;
+  border-spacing: 50px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}

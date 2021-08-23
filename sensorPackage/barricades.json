@@ -1,0 +1,29 @@
+{
+    "instances": [
+        {
+            "X-cor": "4",
+            "Y-cor": "4",
+            "name": "Sir rajinikanth Road "
+        },
+        {
+            "X-cor": "7",
+            "Y-cor": "7",
+            "name": "Shree Shivaji Rao Gaekwad Marg"
+        },
+        {
+            "X-cor": "10",
+            "Y-cor": "3",
+            "name": "Thaliava Chouraha"
+        },
+        {
+            "X-cor": "10",
+            "Y-cor": "7",
+            "name": "Marna mass Chouraha"
+        },
+        {
+            "X-cor": "5",
+            "Y-cor": "10",
+            "name": "Shiva Ji Marg"
+        }
+    ]
+}

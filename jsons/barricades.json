@@ -1,0 +1,29 @@
+{
+    "instances": [
+        {
+            "X-cor": "4",
+            "Y-cor": "4",
+            "name": "Sant Lomdu Road"
+        },
+        {
+            "X-cor": "7",
+            "Y-cor": "7",
+            "name": "Sant Chommmyaa Road"
+        },
+        {
+            "X-cor": "10",
+            "Y-cor": "3",
+            "name": "Shri Shri Ayumshi Road"
+        },
+        {
+            "X-cor": "10",
+            "Y-cor": "7",
+            "name": "Sant Lendus Road"
+        },
+        {
+            "X-cor": "5",
+            "Y-cor": "10",
+            "name": "Sant Kunal Road"
+        }
+    ]
+}

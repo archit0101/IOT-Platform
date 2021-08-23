@@ -1,0 +1,44 @@
+{
+    "instances": [
+        {
+            "busClass": "Eicher_Bus_7_Seater",
+            "busId": "Bus1",
+            "ip": "127.0.0.1",
+            "port": "8081",
+            "X-cor":"0",
+            "Y-cor":"0",
+            "direc":"XY",
+            "magnitude":"inc"
+        },
+        {
+            "busClass": "Eicher_Bus_7_Seater",
+            "busId": "Bus2",
+            "ip": "127.0.0.1",
+            "port": "8082",
+            "X-cor":"10",
+            "Y-cor":"0",
+            "direc":"Y",
+            "magnitude":"inc"
+        },
+        {
+            "busClass": "Eicher_Bus_7_Seater",
+            "busId": "Bus3",
+            "ip": "127.0.0.1",
+            "port": "8083",
+            "X-cor":"0",
+            "Y-cor":"10",
+            "direc":"X",
+            "magnitude":"inc"
+        },
+        {
+            "busClass": "Eicher_Bus_7_Seater",
+            "busId": "Bus4",
+            "ip": "127.0.0.1",
+            "port": "8084",
+            "X-cor":"20",
+            "Y-cor":"10",
+            "direc":"X",
+            "magnitude":"dec"
+        }
+    ]
+}

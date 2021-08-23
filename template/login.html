@@ -1,0 +1,75 @@
+<html>
+
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Welcome To IOT Platform</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+      <link rel="stylesheet" href="style.css" />
+      <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+   </head>
+
+   <body>
+      
+
+      <form action = "http://localhost:5000/login" method = "post">
+         <div class=w3-center id="a1"><h1>Welcome to IOT Platform</h1></div>
+         <br>
+         {% with messages = get_flashed_messages() %}
+         {% if messages %}
+            <ul>
+               <li id="a2">{{ messages }}</li>
+            </ul>
+         {% endif %}
+         {% endwith %}
+         <div>
+            <h3 id="a2" class=w3-center>Login</h3>
+         </div>
+         <br>
+         <div>
+            <table id="a4" class="center">
+                <tr id="a3">
+                    <td>User Type --></td>
+                    <td>
+                        <input list="user_type" name="user_type">
+                        <datalist id="user_type">
+                            <option value="Application Admin">
+                            <option value="End User">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr id="a3"> 
+                    <td>User ID --></td>
+                    <td><input type = "text" name = "uid" /></td>
+                </tr>
+                <tr id="a3">
+                    <td>Password --></td>
+                    <td><input type = "password" name = "pswd" /></td>
+                </tr>
+             </table>
+             
+         </div>
+         <br>
+         <div>
+            <p class="w3-mobile w3-center">
+                <input type="submit" name="submit" value="Submit"
+                    class="w3-button w3-light-yellow w3-padding-large"
+                    style="background-color: #eec65f; left:50%; position: absolute; color: black;">
+                
+              </p>
+         </div>
+         <div id="a2">
+            <br><br><br><br><br>
+            <h4 style="left:80%; position: absolute; ">
+               Developed By:-
+               <br>
+               Group 3
+            </h4>
+            
+         </div>
+         
+      </form>
+   </body>
+</html>
